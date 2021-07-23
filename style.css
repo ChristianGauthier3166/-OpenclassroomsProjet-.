@@ -275,17 +275,15 @@ html,body{
 }
 .titre_les_plus_populaires{
   font-size: large;
-  margin-bottom: 55px;
-}
-.fa-chart-line{
-  color:black;
+  margin-bottom: 21px;
+  margin: 25px;
 }
 #container_hebergements_populaires{
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  padding: 45px 38px 31px 45px;
+  padding: 15px 38px 31px 45px;
   max-width: 485px;
 }
 .hebergement_les_plus_populaires{
@@ -309,7 +307,6 @@ html,body{
 }
 .photo_populaire{
   width: 232px;
-  height: 236px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -443,9 +440,17 @@ html,body{
 }
 /*responsive*/   
 @media screen and (max-width: 1120px){
+  .margLogo{
+  
+  }
+  
+  
+  .flexAround{
+   
+  }
   .mobileFiltre{
-    flex-direction: column;
-    align-items:flex-start;
+    display: flex;
+    flex-wrap: wrap;
   }
   .filtreTexteIcons{
     margin-bottom: 20px;
@@ -505,4 +510,5 @@ html,body{
   .margBlocFooter1{
     margin-left: 0;
   }
+
 }
