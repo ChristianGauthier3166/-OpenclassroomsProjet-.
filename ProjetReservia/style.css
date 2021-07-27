@@ -77,14 +77,20 @@ html,body{
 }
 /*navigation*/
 .sizeNav{
-  height: 100px;
+  height: auto;
 }
 .sizeLiens{
   width: 100%;
 }
+.sizeLien12{
+  margin-left: 60%;
+}
 .sizeLien{
   width: 140px;
   height: 99px;
+}
+.colorLien2{
+  color: black;
 }
 .colorLien13{
   color: blue;
@@ -102,6 +108,9 @@ html,body{
 .margLogo{
   margin-bottom: 7px;
   width: 120px;
+}
+.desktopNone{
+  display: none;
 }
 .bordureSearch{
   width: 400px;
@@ -439,14 +448,9 @@ html,body{
   height: 30px;
 }
 /*responsive*/   
-@media screen and (max-width: 1120px){
-  .margLogo{
-  
-  }
-  
-  
-  .flexAround{
-   
+@media screen and (max-width: 1300px){
+  .sizeLien12{
+  margin-left:  35%;
   }
   .mobileFiltre{
     display: flex;
@@ -455,16 +459,62 @@ html,body{
   .filtreTexteIcons{
     margin-bottom: 20px;
   }
+}
+@media screen and (max-width: 800px){ 
+  .sizeLien12{
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .sizeLienMobile{
+    width: 50%;
+    border-top: 0;
+    border-bottom: 5px solid #f2f2f2;
+  }
+  .sizeLienMobile:hover{
+    border-top: 0;
+    border-bottom: 1px solid #0065fc;
+  }
+  .mobileTitreh1{
+    font-size: x-large;
+  }
+  .bordureSearch{
+    width: auto;
+    border: none;
+    margin-right: 20%;
+  }
+  .recherche{
+    width: 200px;
+  }
+  .buttonSearch{
+    width: 50px;
+    border-radius: 15px;
+  }
+  .desktopNone{
+    display: block;
+  }
+  .mobileNone{
+    display: none;
+  }
+  .sizeLiens{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mobileFiltre{
+    flex-direction: column;
+    align-items: flex-start;
+  }
   #hebergement{
     flex-direction: column-reverse;
     width: 100%;
-  }
+}
   #container_hebergements_populaires{
     flex: none;
     width: 90%;
     margin-left: 0;
-   padding-left: 5%;
-   padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 10%;
   }
   #hebergements_a_marseille{
     flex: none;
@@ -510,5 +560,5 @@ html,body{
   .margBlocFooter1{
     margin-left: 0;
   }
-
-}
+  }
+  
