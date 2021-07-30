@@ -476,7 +476,7 @@ margin-left: 0%;
 }
   .sizeLienMobile{
   width: 50%;
-  border-top: 0%;
+  border-top: 0px;
   border-bottom: 3px solid #f2f2f2;
   }
     .sizeLiens{
@@ -485,7 +485,7 @@ margin-left: 0%;
     flex-wrap: wrap;
     }
       .sizeLienMobile:hover{
-      border-top: 0%;
+      border-top: 0px;
       border-bottom: 3px solid #0065fc;
       }
         .bordureSearch{
