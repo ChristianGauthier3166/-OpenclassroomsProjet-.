@@ -509,10 +509,8 @@ margin-left: 0%;
                 }
                                     }
 @media screen and (max-width: 400px) and (min-width: 280px){
-.flexAround{
-flex-direction: column;
-}
-  .flexBetween{
-  margin-right: auto;
-  }                  
+  .flexAround{
+    flex-direction: column;
+    }
+                  
                                                            }
